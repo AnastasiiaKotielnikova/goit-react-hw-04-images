@@ -12,7 +12,7 @@ const App = () => {
   const [images, setImages] = useState([]);
   const [searchQuery, setSearchQuery] = useState('');
   const [page, setPage] = useState(1);
-  const [pages, setPages] = useState(null);
+  // const [pages, setPages] = useState(null);
   const [status, setStatus] = useState('idle');
   const [largeUrl, setLargeUrl] = useState(null);
   const [tag, setTag] = useState(null);
@@ -60,7 +60,7 @@ const App = () => {
     setTag(alt);
   };
 
-  const checkTheNextPage = page === pages;
+  // const checkTheNextPage = page === pages;
 
   return (
     <Container>
@@ -69,7 +69,7 @@ const App = () => {
         <>
           <ImageGallery images={images} onOpenModal={openModal} />
           {status === 'resolved' && <Button onClick={handleLoadMore} />}
-          {checkTheNextPage}
+          {/* {checkTheNextPage} */}
         </>
       )}
       {status === 'pending' && <Loader />}
