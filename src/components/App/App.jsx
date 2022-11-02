@@ -69,7 +69,7 @@ const App = () => {
         <>
           <ImageGallery images={images} onOpenModal={openModal} />
           {status === 'resolved' && <Button onClick={handleLoadMore} />}
-          {status === 'reject' && checkTheNextPage}
+          {checkTheNextPage}
         </>
       )}
       {status === 'pending' && <Loader />}
