@@ -35,32 +35,3 @@ Modal.propTypes = {
   src: PropTypes.string,
   onClose: PropTypes.func.isRequired,
 };
-
-  // const modalRoot = document.querySelector('#modal-root');
-
-  // export default class Modal extends Component {
-  //   handleEscClose = e => {
-  //     if (e.code === 'Escape') {
-  //       this.props.onClose();
-  //     }
-  //   };
-  // componentDidMount() {
-  //   window.addEventListener('keydown', this.handleEscClose);
-  // }
-  // componentWillUnmount() {
-  //   window.removeEventListener('keydown', this.handleEscClose);
-  // }
-
-//   render() {
-//     const { url, onClose, alt } = this.props;
-//     return createPortal(
-//       <Backdrop onClick={onClose}>
-//         <ModalWindow>
-//           <Image src={url} alt={alt} />
-//         </ModalWindow>
-//       </Backdrop>,
-//       modalRoot
-//     );
-//   }
-// }
-
